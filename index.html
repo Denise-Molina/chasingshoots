@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chasing shoots</title>
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -23,23 +24,136 @@
     <header class="header">
       <nav class="nav">
         <a href="#" class="logo nav-link">Chasing shoots </a>
+
         <button class="nav-toggle" aria-label="Abrir menú">
           <i class="fas fa-bars"></i>
         </button>
+
         <ul class="nav-menu">
+
           <li class="nav-menu-item">
-            <a href="#" class="nav-menu-link nav-link">Inicio</a>
+            <a href="#inicio" class="nav-menu-link nav-link">Inicio</a>
           </li>
           <li class="nav-menu-item">
-            <a href="#" class="nav-menu-link nav-link">Servicios</a>
+            <a href="#servicios" class="nav-menu-link nav-link">Servicios</a>
           </li>
           <li class="nav-menu-item">
-            <a href="#" class="nav-menu-link nav-link">Contacto</a>
+            <a href="#portfolio" class="nav-menu-link nav-link">Portfolio</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="#contacto" class="nav-menu-link nav-link">Contacto</a>
           </li>
         </ul>
       </nav>
     </header>
+
+    <div>
+      <section class="inicio" id="inicio">
+        <div>
+          <h1>Fotógrafa</h1>
+          <p>
+            Pasas innumerables horas planificando cada detalle de tu día
+            especial. Mí objetivo es crear recuerdos duraderos de este momento
+            maravilloso. Cubro todo el evento, no dudes en contactarme.
+          </p>
+        </div>
+      </section>
+      <section class="servicios" id="servicios">
+        <div>
+          <h3>Servicios</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas
+            asperiores consectetur eaque corporis nostrum illo voluptatum
+            temporibus quae ex quasi.
+          </p>
+
+          <div class="container">
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <h4 class="">Bodas</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <img class="imgboda1" src="./img/boda1.jpg" />
+                </div>
+                <div class="col">
+                  <p class="textoboda">
+                    Si estás buscando un fotógrafo o videógrafo de bodas, no
+                    busques más, somos mucho más que el típico «fotógrafo de
+                    bodas». Nuestra misión es capturar los mejores recuerdos de
+                    cada momento que comparten juntos en el día más importante
+                    de sus vidas.
+                  </p>
+                  <img src="./img/boda2.jpg" />
+                </div>
+                <div class="col">
+                  <div class="cajaboda">
+                    <div class="tcaja">
+                      <h5>1</h5>
+                      <p>Contanos tus ideas</p>
+                      <h5>2</h5>
+                      <p>Planifiquemos juntos el presupuesto</p>
+                      <h5>3</h5>
+                      <p>Ejecutemos y hagamos realidad tus sueños</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio" id="portfolio">
+        <div>
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="col">Bodas</div>
+                <img
+                  class="imgrandom"
+                  src="https://picsum.photos/400/300/?random" />
+                <img
+                  class="imgrandom"
+                  src="https://picsum.photos/400/350/?random" />
+              </div>
+
+              <div class="col">
+                <div class="col">Eventos</div>
+                <img
+                  class="imgrandom"
+                  src="https://picsum.photos/260/200?random" />
+                <img
+                  class="imgrandom"
+                  src="https://picsum.photos/260/450/?random" />
+              </div>
+
+              <div class="col">
+                <div class="col">photoshoots</div>
+                <img
+                  class="imgrandom"
+                  src="https://picsum.photos/400/400/?random" />
+                <img
+                  class="imgrandom"
+                  src="https://picsum.photos/400/250/?random" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contacto" id="contacto">
+        <h3>Contacto</h3>
+        <p></p>
+      </section>
+    </div>
+
     <main></main>
-    <script src="./js/script.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

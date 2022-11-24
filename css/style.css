@@ -6,12 +6,13 @@
 body {
     font-family: sans-serif;
     padding: 90px 20px 0;
-    background-image: url(../img/background.jpg);
-    background-size: 100vw 100vh;
+    /* background-image: url(../img/background.jpg);
+    background-size: 100vw 100vh;*/
+    background-color: #f2f3d9;
 }
 
 .header {
-    background-color: lightsalmon;
+    background-color: #da7635;
     height: 80px;
     position: fixed;
     width: 100%;
@@ -25,6 +26,14 @@ body {
 
     max-width: 992px;
     margin: 0 auto;
+}
+
+section[id] {
+    scroll-margin-top: 90px;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 .nav-link {
@@ -60,8 +69,9 @@ body {
 
 .nav-menu-link:hover,
 .nav-menu-link_active {
-    background-color: rgb(247, 115, 63);
+    background-color: #db995a;
     transition: 0.5s;
+    color: #000000;
 }
 
 /* TOGGLE */
@@ -73,7 +83,6 @@ body {
     padding: 0 20px;
     line-height: 60px;
     cursor: pointer;
-
     display: none;
 }
 
@@ -97,7 +106,7 @@ body {
         flex-direction: column;
         align-items: center;
         margin: 0;
-        background-color: rgb(255, 108, 50);
+        background-color: #ED9B40;
         position: fixed;
         top: 60px;
         width: 100%;
@@ -117,7 +126,7 @@ body {
     .nav-menu-link:hover,
     .nav-menu-link_active {
         background: none;
-        color: #e48d53;
+        color: #000000;
     }
 
     .nav-toggle {
@@ -131,4 +140,30 @@ body {
     .nav-toggle:focus:not(:focus-visible) {
         outline: none;
     }
+}
+
+.cajaboda {
+    background-color: #FCB97D;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+.imgboda1 {
+    width: 300px;
+    height: 450px;
+}
+
+.tcaja {
+    margin: 30px;
+}
+
+.textoboda {
+    margin: 35px;
+}
+
+.imgrandom{
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
