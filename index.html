@@ -22,17 +22,18 @@
   </head>
   <body>
     <header class="header">
-      <nav class="nav">
+      <!--codigo  de prueba-->
+      <nav class="topnav">
         <a href="#" class="logo nav-link">Chasing shoots </a>
-
-        <button class="nav-toggle" aria-label="Abrir menú">
-          <i class="fas fa-bars"></i>
+        <button class="open-menu" aria-label="Abrir menú">
+          <i class="fas fa-bars" alt="abrir menú"></i>
         </button>
-
-        <ul class="nav-menu">
-
+        <ul class="menu">
+          <button class="close-menu" aria-label="Cerrar menú">
+            <i class="fa-solid fa-xmark" alt="cerrar menú"></i>
+          </button>
           <li class="nav-menu-item">
-            <a href="#inicio" class="nav-menu-link nav-link">Inicio</a>
+            <a href="#inicio" class="nav-menu-link nav-link selected">Inicio</a>
           </li>
           <li class="nav-menu-item">
             <a href="#servicios" class="nav-menu-link nav-link">Servicios</a>
@@ -49,22 +50,39 @@
 
     <div>
       <section class="inicio" id="inicio">
-        <div>
-          <h1>Fotógrafa</h1>
-          <p>
-            Pasas innumerables horas planificando cada detalle de tu día
-            especial. Mí objetivo es crear recuerdos duraderos de este momento
-            maravilloso. Cubro todo el evento, no dudes en contactarme.
-          </p>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div>
+                <h1>Fotógrafa</h1>
+                <p>
+                  Pasas innumerables horas planificando cada detalle de tu día
+                  especial. Mí objetivo es crear recuerdos duraderos de este
+                  momento maravilloso. Cubro todo el evento, no dudes en
+                  contactarme.
+                </p>
+              </div>
+            </div>
+
+            <div class="col">
+              <img
+                class="imgrandom"
+                src="https://picsum.photos/650/300/?random" />
+            </div>
+          </div>
         </div>
       </section>
       <section class="servicios" id="servicios">
-        <div>
+        <div class="container">
           <h3>Servicios</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas
-            asperiores consectetur eaque corporis nostrum illo voluptatum
-            temporibus quae ex quasi.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+            possimus maiores dolores cupiditate atque inventore vero!
+            Consectetur praesentium accusamus consequatur non. Itaque adipisci
+            consectetur optio iste, inventore quam qui dolore enim quasi porro
+            minus. Neque maxime minima accusantium necessitatibus est dolorum
+            quisquam nesciunt, atque molestias recusandae iure magni quos
+            assumenda.
           </p>
 
           <div class="container">
@@ -148,8 +166,18 @@
       </section>
 
       <section class="contacto" id="contacto">
-        <h3>Contacto</h3>
-        <p></p>
+        <div class="container">
+          <h3>Contacto</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Repudiandae, laudantium aspernatur explicabo enim rerum rem!
+            Accusamus ratione fugit quas tempora magni explicabo nesciunt hic!
+            Libero voluptatibus repudiandae nobis eos perspiciatis commodi dicta
+            laboriosam quaerat placeat sit, sapiente, dolor ipsam quo!
+            Praesentium, debitis vero. Voluptas fugiat rerum neque nesciunt ut
+            quae.
+          </p>
+        </div>
       </section>
     </div>
 

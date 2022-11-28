@@ -6,13 +6,11 @@
 body {
     font-family: sans-serif;
     padding: 90px 20px 0;
-    /* background-image: url(../img/background.jpg);
-    background-size: 100vw 100vh;*/
-    background-color: #f2f3d9;
+    background-color: #EDEDE9;
 }
 
 .header {
-    background-color: #da7635;
+    background-color: #CB8589;
     height: 80px;
     position: fixed;
     width: 100%;
@@ -36,16 +34,11 @@ html {
     scroll-behavior: smooth;
 }
 
+/*navbar*/
+
 .nav-link {
     color: white;
     text-decoration: none;
-}
-
-.logo {
-    font-size: 30px;
-    font-weight: bold;
-    padding: 0 40px;
-    line-height: 80px;
 }
 
 .nav-menu {
@@ -69,10 +62,11 @@ html {
 
 .nav-menu-link:hover,
 .nav-menu-link_active {
-    background-color: #db995a;
+    background-color: #D7B29D;
     transition: 0.5s;
     color: #000000;
 }
+
 
 /* TOGGLE */
 .nav-toggle {
@@ -86,14 +80,157 @@ html {
     display: none;
 }
 
-/* MOBILE */
+.fas {
+    filter: invert(1);
+}
+
+/*menu hyamburguesa*/
+
+.topheader {
+    box-shadow: 0 4px 5px var(--navbar-shallow-color);
+    position: fixed;
+    background-color: var(--theme-color);
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.topnav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+/* Logo */
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 500;
+
+}
+
+.logo img {
+    border-radius: 50%;
+}
+
+/* Menu */
+.menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    padding: 0 15px;
+}
+
+.menu a {
+
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 50px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.menu a::after {
+    content: "";
+    background-color: var(--secondary-color);
+    position: absolute;
+    left: 0;
+    top: calc(100% + 4px);
+    width: 100%;
+    height: 4px;
+
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.menu a.selected::after,
+.menu a:hover::after {
+    opacity: 0.8;
+}
+
+.menu a:hover {
+    color: var(--primary-color);
+}
+
+.open-menu,
+.close-menu {
+    display: none;
+}
+
+
+/*Mobile*/
 @media (max-width: 768px) {
+
     body {
         padding-top: 70px;
     }
 
-    .header {
-        height: 60px;
+    .menu {
+        flex-direction: column;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        align-items: center;
+        background-color: var(--menu-mobile-background-color);
+        height: 100%;
+        overflow-y: auto;
+
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s;
+    }
+
+    .menu li {
+        padding: 0;
+    }
+
+    .menu a {
+        color: var(--text-color-inverse);
+        line-height: 70px;
+        font-size: 20px;
+    }
+
+    .open-menu,
+    .close-menu {
+        display: block;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+    .close-menu {
+        align-self: flex-end;
+        padding: 20px 15px;
+    }
+
+    .menu_opened {
+        opacity: 1;
+        pointer-events: all;
+        background-color: #CD8987;
+    }
+
+    .open-menu:focus:not(:focus-visible),
+    .close-menu:focus:not(:focus-visible) {
+        outline: none;
+    }
+
+    .menu a::after {
+        content: none;
+    }
+
+    .menu a:hover,
+    .menu a.selected {
+        color: var(--secondary-color);
     }
 
     .logo {
@@ -102,48 +239,16 @@ html {
         line-height: 60px;
     }
 
-    .nav-menu {
-        flex-direction: column;
-        align-items: center;
-        margin: 0;
-        background-color: #ED9B40;
-        position: fixed;
-        top: 60px;
-        width: 100%;
-        padding: 20px 0;
-
-        height: calc(100% - 60px);
-        overflow-y: auto;
-
-        left: 100%;
-        transition: left 0.3s;
-    }
-
-    .nav-menu-item {
-        line-height: 70px;
-    }
-
-    .nav-menu-link:hover,
-    .nav-menu-link_active {
-        background: none;
-        color: #000000;
-    }
-
-    .nav-toggle {
-        display: block;
-    }
-
-    .nav-menu_visible {
-        left: 0;
-    }
-
-    .nav-toggle:focus:not(:focus-visible) {
-        outline: none;
+    .header {
+        height: 70px;
     }
 }
 
+/*servicios*/
+/*boda*/
+
 .cajaboda {
-    background-color: #FCB97D;
+    background-color: #565264;
     border-radius: 20px;
     justify-content: center;
     align-items: center;
@@ -157,13 +262,14 @@ html {
 
 .tcaja {
     margin: 30px;
+    color:white;
 }
 
 .textoboda {
     margin: 35px;
 }
 
-.imgrandom{
+.imgrandom {
     margin-top: 10px;
     margin-bottom: 10px;
 }
